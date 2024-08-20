@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web player: Music for evryone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link herf="https://fonts.googleapis.com/css2?family=Montserrat:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">search</a>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p
+                        <p class="box-p2">Its's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-icons">
+                    <img src="./assets/backward_icon copy 2.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"> <i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install app</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                </div>
+           
+
+
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card" style="width: 250px;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/819xa8Vdk7S._AC_SL1500_.jpg" class="card-img 1">
+                        <p class="card-title">Top 50-Global</p>
+                        <p class="card-info">Your daily update of the most played...</p>
+                    </div>
+                </div>
+            
+                <h2>Trending now near you</h2>
+                <div class="cards-container first">
+                    <div class="card">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f5ac8ed-8ec1-40c3-aa93-d74b7c37e501/de3azbr-1ced76b3-5a69-48be-8023-1dc4ebf9d3fc.jpg/v1/fill/w_894,h_894,q_70,strp/bts_map_of_the_soul___7_album_cover_by_kapalmz_de3azbr-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcLzNmNWFjOGVkLThlYzEtNDBjMy1hYTkzLWQ3NGI3YzM3ZTUwMVwvZGUzYXpici0xY2VkNzZiMy01YTY5LTQ4YmUtODAyMy0xZGM0ZWJmOWQzZmMuanBnIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-Ey1ABnSqe7_eOSSG2CpL3ZGPSR-6CvAcUQ9yZCKF-k" class="card-img 2">
+                        <p class="card-title">Morning Hits</p>
+                        <p class="card-info">Spen your time with most played BTS songs...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/07/00/04/070004e50a8512d0352df2898cff49d1.jpg" class="card-img 3">
+                        <p class="card-title">G(I)dle</p>
+                        <p class="card-info">Daily Mix...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://www.universal-music.co.jp/blackpink/wp-content/uploads/sites/3515/2020/10/BLACKPINK_Crown_0728M-1024x1024.jpg" class="card-img 4">
+                        <p class="card-title">Daily Mix 2</p>
+                        <p class="card-info">Blackpink || Hits...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.yDEaEqNx07Rw9goTrF1VKgHaHa?rs=1&pid=ImgDetMain" class="card-img 5">
+                        <p class="card-title"> Hits of Jungkook</p>
+                        <p class="card-info">Morning Tea with JK...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/326e7458-4365-449e-8bb0-94994fedaa9c/df1t0hw-6d2c1638-1fe4-43d3-ae8c-b4f5df81636e.jpg/v1/fill/w_1280,h_1280,q_75,strp/blackpink___kill_this_love__5__by_vanessa_van3ss4_df1t0hw-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzMyNmU3NDU4LTQzNjUtNDQ5ZS04YmIwLTk0OTk0ZmVkYWE5Y1wvZGYxdDBody02ZDJjMTYzOC0xZmU0LTQzZDMtYWU4Yy1iNGY1ZGY4MTYzNmUuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.D_A0ihEcjzTOI48L0A1V_iYnzA7GBo-JJAi1rhxi3sU" class="card-img 6">
+                        <p class="card-title">Daily Mix 2</p>
+                        <p class="card-info">Top 10 Hits...</p>
+                    </div>
+                </div>
+
+                <h2>Featured charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://www.generasia.com/w/images/thumb/d/d3/LE_SSERAFIM_-_FEARLESS_reg.jpg/440px-LE_SSERAFIM_-_FEARLESS_reg.jpg" class="card-img 7">
+                        <p class="card-title">Le sserafim</p>
+                        <p class="card-info">Smashup || Fearless...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://pm1.narvii.com/6571/054aebeb8fa4503619a4f446b2ce461c313a5cbf_hq.jpg" class="card-img 7">
+                        <p class="card-title">No More Dream</p>
+                        <p class="card-info">Daily Updates...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/3c/84/6d/3c846dfc6a1accac1a090b4f9a41ded0.jpg" class="card-img 9 ">
+                        <p class="card-title">Top 1</p>
+                        <p class="card-info">Discover Weekly...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/88/da/da/88dada02-f9e3-b632-6fb7-d52414d7ac76/23UMGIM43940.rgb.jpg/1200x1200bf-60.jpg" class="card-img 10">
+                        <p class="card-title">Le sserafim</p>
+                        <p class="card-info">Le sserafim Radio...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://lh3.googleusercontent.com/-bN9Uf9Wa3Mo/YSZzyoqn32I/AAAAAAABauQ/wNDeOYUWNjozmAwjtF2MChNCxOnlcKNpwCLcBGAsYHQ/s16000/image.png" class="card-img 11">
+                        <p class="card-title">Discover with LaLisa</p>
+                        <p class="card-info">K-Kop (Q)ueen...</p>
+                    </div>
+                </div>
+
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://img.youtube.com/vi/djKdPZiJdvA/hqdefault.jpg" class="card-img 12">
+                        <p class="card-title">Still with you</p>
+                        <p class="card-info">most played song by global... </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://rollingstoneindia.com/wp-content/uploads/2020/06/Screenshot-2020-06-29-at-3.00.58-PM-960x610.png" class="card-img 13">
+                        <p class="card-title">Maria</p>
+                        <p class="card-info">Maria by-Hwasa.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a8ae47b2-0a74-4f13-ab4a-044db0aa19e0/dfdjjnp-76fb17de-77b7-49c0-89ab-62b862069724.jpg/v1/fill/w_901,h_887,q_70,strp/blackpink___born_pink__07__by_carieloveyou_dfdjjnp-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA2MyIsInBhdGgiOiJcL2ZcL2E4YWU0N2IyLTBhNzQtNGYxMy1hYjRhLTA0NGRiMGFhMTllMFwvZGZkampucC03NmZiMTdkZS03N2I3LTQ5YzAtODlhYi02MmI4NjIwNjk3MjQuanBnIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jbbWBzg60vx_ETWrBksu9KFBTmvcJEsDD2pb5GR8QXE" class="card-img 14">
+                        <p class="card-title">Born Pink</p>
+                        <p class="card-info">Top songs of Blackpink...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ccdfced-e839-42d5-a415-5966da9a4e31/dcp2amd-ab43b188-7c08-4873-b8cc-958008049631.jpg/v1/fill/w_1280,h_1280,q_75,strp/_g_i_dle___hann_by_diyeah9tee4_dcp2amd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzljY2RmY2VkLWU4MzktNDJkNS1hNDE1LTU5NjZkYTlhNGUzMVwvZGNwMmFtZC1hYjQzYjE4OC03YzA4LTQ4NzMtYjhjYy05NTgwMDgwNDk2MzEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LaQ6Kj26X6nEKsn_lL0NlB6eX-B_xq6wn-1RnUWT85s" class="card-img 15">
+                        <p class="card-title">HANN</p>
+                        <p class="card-info">Top songs by G(I)dle</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/977/753/desktop-wallpaper-bts-boy-in-luv-skool-luv-affair-thumbnail.jpg" class="card-img 16">
+                        <p class="card-title">Boy in Luv</p>
+                        <p class="card-info">recently played songs...</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album2">
+                <div class="cover-img">
+                    <img src="https://th.bing.com/th/id/OIP.yDEaEqNx07Rw9goTrF1VKgHaHa?rs=1&pid=ImgDetMain" class="cov-img 17">
+                    <p  class="writer">3D (feat. Jungkook and Latto...)
+                        <p class="writer" style="margin-top:50px;">Jungkook, Latto...</p>
+                    </p>
+                    
+                </div>
+                <div class="two-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="control-icon 18">
+                    <img src="./assets/player_icon2.png" class="control-icon 19">
+                    <img src="./assets/player_icon3.png" class="control-icon playmusic" style="opacity: 1; height:2rem;">
+                    <img src="./assets/player_icon4.png" class="control-icon 20">
+                    <img src="./assets/player_icon5.png" class="control-icon 21">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">3:45</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-panel">
+                    <div class="some-icon">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-thermometer"></i>
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-regular fa-id-badge"></i>
+                    </div>
+                    <div class="volume">
+                    <i class="fa-solid fa-volume-off" style="margin-right:10px;"></i>      
+                    <input type="range" min="0" max="100" class="vol">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center" style="margin-right:10px;"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
